@@ -7,20 +7,36 @@
 	
 }*/
 
+/*body style*/
+body {
+	/*rethink the background color lol*/
+	background: #FDF3E7;
+}
+
 /*logo*/
 .logo {
 	float: left;
 	width: 30%;
-	text-align: center;
+	text-align: right;
 }
 
 
 /*nav bar*/
+/*the a links are no vertically centered*/
+/*add underline for the border*/
+.top {
+	border-color: black;
+	border-bottom: 20px;
+}
+
 .nav {
-	float: left;
+	float: right;
 	list-style-type: none;
 	/*text-align: center;*/
-	width: 61%;
+	width: 65%;
+	margin-top: 21.44px;
+	margin-bottom: 21.44px;
+	height: 37px;
 }
 
 
@@ -30,6 +46,16 @@
 	margin-left: 60px;
 }
 
+
+
+/*div*/
+
+
+.content {
+	text-align: center;
+	margin-right: 33%;
+	margin-left: 33%;
+}
 
 a {
 	text-decoration: none;
