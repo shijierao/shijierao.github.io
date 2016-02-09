@@ -1,0 +1,36 @@
+/*meadia query*/
+/*@media screen and (max-width: 140px){
+
+}*/
+/*media query*/
+/*@media screen and (min-width: 1300){
+	
+}*/
+
+/*logo*/
+.logo {
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+
+
+/*nav bar*/
+.nav {
+	float: left;
+	list-style-type: none;
+	/*text-align: center;*/
+	width: 61%;
+}
+
+
+.navOpt {
+	display: inline;
+	margin-right: 60px;
+	margin-left: 60px;
+}
+
+
+a {
+	text-decoration: none;
+}
