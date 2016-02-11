@@ -1,4 +1,6 @@
 // // jquery for detecting page scroll
+
+
 // $(function(){
 // 	var bodyHeight = $("body").height();
 // 	var windowHeight = $(window).height();
