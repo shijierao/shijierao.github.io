@@ -74,11 +74,9 @@ p{
 	margin-left: auto;
 }
 
-img {
-	width: 45%;
+.resume {
+	width: 100%;
 }
-
-
 
 
 
@@ -95,8 +93,8 @@ img {
 		top: 0;
 		left: 0;
 		position: fixed;
-		/*background: #FDF3E7;*/
-		background: white;
+		background: #FDF3E7;
+		/*background: white;*/
 		z-index: 500;
 	}
 
