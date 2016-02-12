@@ -100,6 +100,10 @@ img {
 	padding-left: 0;
 }
 
+#name {
+	display: none;
+}
+
 
 
 .logo{
@@ -109,9 +113,8 @@ img {
 		margin-right: auto;
 		margin-left: auto;
 		margin-top: auto;
-		/*height: 37px;*
-		font-weight: 700;
-		/*font-style: italic;*/
+		font-weight: 900;
+		font-style: italic;
 }
 
 @media screen and (max-width: 620px){
@@ -142,7 +145,7 @@ img {
 	}
 }
 
-@media screen and (max-width: 1050px) and (min-width: 620px){
+@media screen and (max-width: 1080px) and (min-width: 620px){
 	.content {
 		top: 80px;
 	}
@@ -201,26 +204,28 @@ img {
 
 
 /*media query*/
-@media screen and (min-width: 1050px){
+@media screen and (min-width: 1080px){
 	.top {
 		height: 70px;
 	}
 
 	/*logo*/
 	.logo {
-		display: block;
-		float: left;
+		display: none;
+		/*display: block;*/
+/*		float: left;
 		width: 25%;
 		text-align: right;
 		margin-top: 20px;
 		margin-right: auto;
-		margin-left: auto;
+		margin-left: auto;*/
 	}
 
 	.nav {
-		float: left;
-		text-align: left;
-		width: 75%;
+		/*float: left;*/
+		/*text-align: left;*/
+		text-align: center;
+		width: 80%;
 		margin-right: auto;
 		margin-left: auto;
 		margin-top: 20px;
@@ -239,13 +244,21 @@ img {
 	.navOpt, .footerOpt {
 		display: inline-block;
 		/*text-align: center;*/
-		/*width:auto;*/
-		margin-right: 7%;
-		margin-left: 7%;
+		width:auto;
+		margin-right: 5%;
+		margin-left: 5%;
 		/*padding-right: 6%;*/
 		/*padding-left: 6%;*/
 		/*margin-right: 5%;*/
 		/*margin-left: 60px;*/
+	}
+
+	#name {
+		display: inline-block;
+		font-weight: 900;
+		font-style: italic;
+		font-size: 35px;
+		margin-right: 3%;
 	}
 
 /*	.pLeft, .iLeft {
