@@ -2,36 +2,91 @@
 /*@media screen and (max-width: 140px){
 
 }*/
+
+/*body style*/
+body, html {
+	/*rethink the background color lol*/
+	background: #FDF3E7;
+	font-family: 'Lato', sans-serif;
+	height: 98%;
+}
+
+.wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+
+/*content div*/
+.content {
+	text-align: center;
+	margin-right: 23%;
+	margin-left: 23%;
+	padding-bottom: 100px;
+	position: relative;
+	top: 60px;
+}
+
+
+/*nav bar, footer*/
+/*the a links are no vertically centered*/
+/*add underline for the border*/
+
+
+.navOpt:hover, .footerOpt:hover {
+	font-weight: 900;
+	/*border-bottom: 3px solid black;*/
+}
+
+/*.footerOpt:hover {
+	border-bottom: 1px solid black;	
+}*/
+
+
+.bottom {
+    bottom: 0;
+    height: 20px;
+    margin: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    /*vertical-align: middle;*/
+}
+
+.navOpt::after, .footerOpt::after, a::after {
+	display:block;
+	content:attr(title);
+	font-weight:900;
+	height:1px;
+	color:transparent;
+	overflow:hidden;
+	visibility:hidden;
+}
+
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+p{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+img {
+	width: 45%;
+}
+
+
+
+
+
+
+
+
 /*media query*/
 @media screen and (min-width: 1050px){
-	/*body style*/
-	body, html {
-		/*rethink the background color lol*/
-		background: #FDF3E7;
-		font-family: 'Lato', sans-serif;
-		height: 98%;
-	}
-
-	.wrapper {
-		min-height: 100%;
-		position: relative;
-	}
-
-
-	/*content div*/
-	.content {
-		text-align: center;
-		margin-right: 23%;
-		margin-left: 23%;
-		padding-bottom: 100px;
-		position: relative;
-		top: 60px;
-	}
-
-
-	/*nav bar, footer*/
-	/*the a links are no vertically centered*/
-	/*add underline for the border*/
 	.top {
 	/*	border-color: black;
 		border-bottom: 20px;*/
@@ -87,41 +142,14 @@
 		/*margin-left: 60px;*/
 	}
 
-	.navOpt:hover, .footerOpt:hover {
-		font-weight: 900;
-		/*border-bottom: 3px solid black;*/
+	.pLeft, .iLeft {
+		float: left;
+		width: 45%;
 	}
 
-	/*.footerOpt:hover {
-		border-bottom: 1px solid black;	
-	}*/
-
-
-	.bottom {
-	    bottom: 0;
-	    height: 20px;
-	    margin: auto;
-	    left: 0;
-	    position: absolute;
-	    right: 0;
-	    /*vertical-align: middle;*/
+	.pRight, .iRight {
+		float: right;
+		width: 45%;
 	}
 
-	.navOpt::after, .footerOpt::after, a::after {
-		display:block;
-		content:attr(title);
-		font-weight:900;
-		height:1px;
-		color:transparent;
-		overflow:hidden;
-		visibility:hidden;
-	}
-
-
-	a {
-		color: black;
-		text-decoration: none;
-	}
 }
-
-
