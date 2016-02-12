@@ -121,6 +121,24 @@ img {
 }
 
 @media screen and (max-width: 620px){
+	.logo {
+		font-size: 35px;
+	}
+
+	.top{
+		margin-top: 5px;
+	}
+
+	.nav{
+		display: none;
+	}
+
+
+	.content {
+		top: 0px;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
 
 }
 
@@ -164,6 +182,8 @@ img {
 @media screen and (max-width: 1080px) and (min-width: 620px){
 	.content {
 		top: 80px;
+		margin-right: 21%;
+		margin-left: 21%;
 	}
 
 	.nav{
@@ -176,10 +196,6 @@ img {
 		/*height: 37px;*
 		font-weight: 700;
 		/*font-style: italic;*/
-	}
-
-	.nav {
-		padding-bottom: 10%;
 	}
 
 
