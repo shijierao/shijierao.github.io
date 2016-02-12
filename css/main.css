@@ -25,17 +25,13 @@ body, html {
 	padding-bottom: 100px;
 	position: relative;
 	top: 60px;
+	vertical-align: middle;
 }
 
 p{
 	margin-right: auto;
 	margin-left: auto;
 }
-
-.resume {
-	width: 100%;
-}
-
 
 /*nav bar, footer*/
 /*the a links are no vertically centered*/
