@@ -19,4 +19,6 @@ $(document).ready(function(){
 		$("#down").css("display","block");
 	});
 
+	console.log($(".nav").css("display"));
+
 });
