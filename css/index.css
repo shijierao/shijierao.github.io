@@ -1,0 +1,71 @@
+.logo {
+	display: block;
+	font-size: 40px;
+}
+
+
+.top {
+	margin-top: 10%;
+	/*position: absolute;*/
+/*	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;*/
+	/*margin: auto;*/
+}
+
+.nav {
+	margin-top: 5%;
+	display: block;
+	font-size: 25px;
+}
+
+.navOpt {
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+@media screen and (max-width: 620px){
+
+	.wrapper {
+		min-height: 85%;
+	}
+
+	.nav {
+		margin-top: 5%;
+		display: block;
+		font-size: 20px;
+	}
+	#down {
+		/*height: 10%;*/
+		display: none;
+	}
+
+
+	.content {
+		top: 0px;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+
+	.navOpt, .footerOpt {
+		/*display: inline-block;*/
+		text-align: center;
+		width:auto;
+		margin-right: 6%;
+		margin-left: 6%;
+		/*padding-right: 5%;*/
+		/*padding-left: 5%;*/
+		/*margin-right: 60px;*/
+		/*margin-left: 60px;*/
+	}
+	
+	.navOpt {
+		margin-top: 2%;
+	}
+
+	p {
+		line-height: 125%;
+	}
+
+}
