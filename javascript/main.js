@@ -4,9 +4,11 @@ $(document).ready(function(){
 	var currentFile = pathName ? pathName[0].split(".")[0] : "index";
 	// var currentFile = document.location.pathname.match(/[^\/]+$/)[0].split(".")[0];
 	console.log(currentFile);
+	
 	if(currentFile !== "index"){
 		$("#"+currentFile).css("font-weight","900");	
 	}
+
 
 	$("#down").on("click", function(){
 		console.log("click");
@@ -26,24 +28,24 @@ $(document).ready(function(){
 
 	// $("#about").on("click", function() {
 	// 	console.log("haha");
-	// 	$.get("resume.html", function(data){
-	// 		$.html(data).show("slow");
+	// 	$.get("about.html", function(data){
+	// 		$(".content").html(data).show("slow");
 	// 	});
 	// });
 
 
-	// $('.nav li a').click(function(){
-	// 	var toLoad = $(this).attr('href')+' .content';
-	// 	$('.content').hide('fast',loadContent);
-	// 	window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
-	// 	function loadContent() {
-	// 		$('.content').load(toLoad,'',showNewContent())
-	// 	}
-	// 	function showNewContent() {
-	// 		$('.content').show('normal');
-	// 	}
-	// 	return false;
-		
-	// });
-
+	// var contentDiv = " .content";
+	// 	$('.nav li a').click(function(){
+			// var toLoad = $(this).attr('href')+' .content';
+			// $('.content').hide('fast',loadContent);
+			// window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
+			// function loadContent() {
+			// 	$('.content').load(toLoad,'',showNewContent())
+			// }
+			// function showNewContent() {
+			// 	$('.content').show('fast');
+			// }
+			// return false;
+			
+		// });
 });
