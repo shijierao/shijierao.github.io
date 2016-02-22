@@ -1,5 +1,7 @@
 .logo {
 	display: block;
+	text-decoration: underline;
+	/*border-bottom: 5px solid black;*/
 	font-size: 40px;
 }
 
