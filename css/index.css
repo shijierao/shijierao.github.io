@@ -25,6 +25,10 @@
 	margin-left: 2%;
 }
 
+#name {
+	display: none;
+}
+
 @media screen and (max-width: 620px){
 
 	.wrapper {
