@@ -19,7 +19,7 @@ body, html {
 
 /*content div*/
 .content {
-	/*text-align: center;*/
+	text-align: center;
 	padding-bottom: 100px;
 	position: relative;
 	overflow: hidden;
@@ -45,6 +45,7 @@ p{
 	text-align: left;
 	line-height: 130%;
 	font-size: 17px;
+	font-weight: 300;
 }
 
 
@@ -118,6 +119,7 @@ p{
 #down, #up {
 	width: 8%;
 	display: none;
+	margin: auto;
 }
 
 
@@ -145,11 +147,14 @@ a {
 	text-decoration: none;
 }
 
-img {
-	margin: auto;
-	width: 75%;
+
+.iLeft, .iRight, img {
+	margin-bottom: 1%;
 }
 
+img {
+	width: 75%;
+}
 
 /*mobile responsive*/
 @media screen and (max-width: 620px){
@@ -224,12 +229,12 @@ img {
 
 	.pLeft, .iLeft {
 		float: left;
-		width: 50%;
+		width: 49%;
 	}
 
 	.pRight, .iRight {
 		float: right;
-		width: 50%;
+		width: 49%;
 	}
 
 
@@ -283,8 +288,8 @@ img {
 /*media query*/
 @media screen and (min-width: 1080px){
 	.content{
-		margin-right: 15%;
-		margin-left: 15%;
+		margin-right: 20%;
+		margin-left: 20%;
 		top: 55px;
 	}
 
