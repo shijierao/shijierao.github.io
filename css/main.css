@@ -120,6 +120,7 @@ p{
 	width: 8%;
 	display: none;
 	margin: auto;
+	margin-bottom: 1%;
 }
 
 
@@ -153,7 +154,7 @@ a {
 }
 
 img {
-	width: 75%;
+	width: 85%;
 }
 
 /*mobile responsive*/

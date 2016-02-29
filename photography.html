@@ -17,6 +17,7 @@
 
 	<!-- local css -->
 	<link rel="stylesheet" media="screen" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
 	<!-- local normalize.css -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 
@@ -43,30 +44,20 @@
 			<img id="down" src="img/down.png">
 		</div>
 		<div class="content">
-			<a href="img/test/1-2.jpg" data-lightbox="image-1" data-title="test-1">
-				<img class="iLeft" src="img/test/1-2.jpg">
+
+			<!-- ileft, iright margin top bottom issue -->
+			<a href="img/photography/SundayAfternoon.png" data-lightbox="img" data-title="test-1">
+				<img class="iLeft" src="img/photography/SundayAfternoon.png">
 			</a>
 
-			<a href="img/test/1.jpg" data-lightbox="image-1" data-title="test-1">
-				<img class="iRight" src="img/test/1.jpg">
+			<a href="img/photography/close.png" data-lightbox="img" data-title="test-1">
+				<img class="iRight" src="img/photography/close.png">
 			</a>
 			
-			<a href="img/test/2.jpg" data-lightbox="image-1" data-title="test-1">
-				<img src="img/test/2.jpg">
+			<a href="img/photography/bar.png" data-lightbox="img" data-title="test-1">
+				<img src="img/photography/bar.png">
 			</a>
 
-
-			<a href="img/test/3-2.jpg" data-lightbox="image-1" data-title="test-1">
-				<img src="img/test/3-2.jpg">
-			</a>
-
-			<a href="img/test/3.jpg" data-lightbox="image-1" data-title="test-1">
-				<img src="img/test/3.jpg">
-			</a>
-
-			<a href="img/bluesquare.jpg" data-lightbox="image-1" data-title="test-1">
-				<img src="img/bluesquare.jpg">
-			</a>
 
 
 		</div>
@@ -81,7 +72,9 @@
 	<script src="javascript/lightbox.js"></script>
 	<script type="text/javascript">
 		lightbox.option({
-			'maxWidth': 1000
+			'resizeDuration': 200,
+			'disableScrolling': true,
+			'fadeDuration': 200
 		});
 	</script>
 </body>
