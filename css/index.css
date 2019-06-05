@@ -10,6 +10,11 @@ body {
     height: 100%;
 }
 
+.logo {
+    position: fixed;
+    top: 10px;
+}
+
 #wrapper {
     height: 100%;
     display: flex;
