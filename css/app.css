@@ -1,21 +1,31 @@
 html {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     background: rgba(255, 235, 55, 0.25);
-    color: #384038;
+    color: #435043;
     font-size: 16px;
+    height: 100%;
 }
 
-.header {
-    font-size: 7rem;
-    font-weight: bold;
-    line-height: 0.8em;
-    margin: 1.5rem 0;
+body {
+    height: 100%;
+}
+
+#wrapper {
+    height: 100%;
+    display: flex;
 }
 
 .content {
-    height: 100%;
+    /* min-height: 100%; */
     max-width: 1200px;
     margin: auto;
+}
+
+.header {
+    font-size: 6.854rem;
+    font-weight: bold;
+    line-height: 0.8em;
+    margin: 1.5rem 0;
 }
 
 div {
@@ -40,7 +50,10 @@ div {
 }
 
 .links {
-    flex-basis: 30%;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 figure {
@@ -53,9 +66,162 @@ img {
     max-width: 100%;
     -webkit-filter: grayscale(40%); /* Safari 6.0 - 9.0 */
     filter: grayscale(40%);
+    object-fit: cover;
+    height: 290px;
+    width: 100%;
 }
 
 .body-text {
-    font-family: 'lato';
-    line-height: 1.5em;
+    font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.5rem;
+    color: #586d58;
+    font-weight: lighter;
+}
+
+/* .bold-body-text {
+    font-weight: bold;
+    color: #586d58;
+} */
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    font-weight: bold;
+    color: inherit;
+    opacity: 0.8;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.618em;
+    margin: 1rem 0;
+}
+
+.link-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1400px) {
+    .email-standalone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1000px) {
+    .content {
+        max-width: 900px;
+    }
+
+    .main {
+        flex-wrap: wrap;
+    }
+
+    .photo {
+        flex-basis: 45%;
+    }
+
+    img {
+        height: 310px;
+    }
+
+    .description, .socials {
+        flex-basis: 50%;
+    }
+
+    .links {
+        flex-basis: 100%;
+        flex-direction: row;
+    }
+
+    .link-group {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    /* #github, #linkedin {
+        display: none;
+    } */
+
+    .align-group {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .title {
+        margin-right: 1rem;
+    }
+
+    .link {
+        margin-right: .5rem;
+    }
+    
+    .email-standalone {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    /* html {
+        font-size: 12px;
+    } */
+
+    .header {
+        font-size: 4.236em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .content {
+        max-width: 500px;
+    }
+
+    .main {
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .photo {
+        flex-basis: 45%;
+    }
+
+    img {
+        height: 310px;
+    }
+
+    .description, .socials {
+        flex-basis: 40%;
+    }
+
+    .links {
+        flex-basis: 100%;
+        flex-direction: row;
+    }
+
+    .link-group {
+        align-items: baseline;
+    }
+
+    .align-group {
+        align-items: baseline;
+    }
+
+    .title {
+        margin-right: 1rem;
+    }
+
+    .link {
+        margin-right: .5rem;
+    }
+
+    .socials .email, #github {
+        display: none;
+    }
 }
