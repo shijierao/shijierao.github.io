@@ -1,78 +1,227 @@
-.logo {
-	display: block;
-	text-decoration: underline;
-	/*border-bottom: 5px solid black;*/
-	font-size: 40px;
+html {
+    font-family: 'PT Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: rgba(255, 235, 55, 0.25);
+    color: #435043;
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+#wrapper {
+    height: 100%;
+    display: flex;
+}
+
+.content {
+    /* min-height: 100%; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    font-size: 6.854rem;
+    font-weight: bold;
+    line-height: 0.8em;
+    margin: 1.5rem 0;
+}
+
+div {
+    position: relative;
+}
+
+.sticky-bottom {
+    position: sticky;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo {
+    flex-basis: 25%;
+}
+
+.description {
+    flex-basis: 40%;
+}
+
+.links {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    -webkit-filter: grayscale(40%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(40%);
+    object-fit: cover;
+    height: 290px;
+    width: 100%;
+}
+
+.body-text {
+    font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.5rem;
+    color: #586d58;
+    font-weight: lighter;
+}
+
+/* .bold-body-text {
+    font-weight: bold;
+    color: #586d58;
+} */
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    font-weight: bold;
+    color: inherit;
+    opacity: 0.8;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.618em;
+    margin: 1rem 0;
+}
+
+.link-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1400px) {
+    .email-standalone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1000px) {
+    .content {
+        max-width: 900px;
+    }
+
+    .main {
+        flex-wrap: wrap;
+    }
+
+    .photo {
+        flex-basis: 45%;
+    }
+
+    img {
+        height: 310px;
+    }
+
+    .description, .socials {
+        flex-basis: 50%;
+    }
+
+    .links {
+        flex-basis: 100%;
+        flex-direction: row;
+    }
+
+    .link-group {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    /* #github, #linkedin {
+        display: none;
+    } */
+
+    .align-group {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .title {
+        margin-right: 1rem;
+    }
+
+    .link {
+        margin-right: .5rem;
+    }
+    
+    .email-standalone {
+        display: none;
+    }
 }
 
 
-.top {
-	margin-top: 10%;
-	/*border-bottom: 5px solid black;*/
-	/*position: absolute;*/
-/*	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;*/
-	/*margin: auto;*/
-}
+@media screen and (max-width: 1000px) {
+    /* html {
+        font-size: 12px;
+    } */
 
-.nav {
-	margin-top: 5%;
-	display: block;
-	font-size: 25px;
-}
+    .header {
+        font-size: 4.236em;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 
-.navOpt {
-	margin-right: 2%;
-	margin-left: 2%;
-}
+    .content {
+        max-width: 500px;
+    }
 
-#name {
-	display: none;
-}
+    .main {
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 
-@media screen and (max-width: 620px){
+    .photo {
+        flex-basis: 45%;
+    }
 
-	.wrapper {
-		min-height: 85%;
-	}
+    img {
+        height: 310px;
+    }
 
-	.nav {
-		margin-top: 5%;
-		display: block;
-		font-size: 20px;
-	}
-	#down {
-		/*height: 10%;*/
-		display: none;
-	}
+    .description, .socials {
+        flex-basis: 40%;
+    }
 
+    .links {
+        flex-basis: 100%;
+        flex-direction: row;
+    }
 
-	.content {
-		top: 0px;
-		margin-right: 5%;
-		margin-left: 5%;
-	}
+    .link-group {
+        align-items: baseline;
+    }
 
-	.navOpt, .footerOpt {
-		/*display: inline-block;*/
-		text-align: center;
-		width:auto;
-		margin-right: 6%;
-		margin-left: 6%;
-		/*padding-right: 5%;*/
-		/*padding-left: 5%;*/
-		/*margin-right: 60px;*/
-		/*margin-left: 60px;*/
-	}
-	
-	.navOpt {
-		margin-top: 2%;
-	}
+    .align-group {
+        align-items: baseline;
+    }
 
-	p {
-		line-height: 125%;
-	}
+    .title {
+        margin-right: 1rem;
+    }
 
+    .link {
+        margin-right: .5rem;
+    }
+
+    .socials .email, #github {
+        display: none;
+    }
 }
